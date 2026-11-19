@@ -29,7 +29,7 @@ services:
 
   # --- Capa de aplicación: Flask servido con Gunicorn ---
   app:
-    image: unisonsrv2eq3/inventario-app:1.0
+    image: unisonsrv2eq3/inventario-app:1.1
     restart: unless-stopped
     environment:
       DB_HOST: db

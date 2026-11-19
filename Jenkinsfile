@@ -21,7 +21,7 @@ pipeline {
         sh 'grep -Eq "^ +app:" compose.yaml' 
         sh 'grep -Eq "^ +db:" compose.yaml' 
         sh 'grep -q "healthcheck:" compose.yaml' 
-        sh 'grep -q "image: .*/inventario-app:1.0" compose.yaml' 
+        sh 'grep -q "image: .*/inventario-app:1.1" compose.yaml' 
       } 
     } 
     stage('Historial en Git') { 
